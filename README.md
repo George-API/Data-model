@@ -1,4 +1,4 @@
-# Schema Model: TypeScript Schema Visualization Tool
+# Data Model: TypeScript Schema Visualization Tool
 
 ## Overview
 This tool visually maps your codebase's core architecture—including data handling and state management—by parsing a generated TypeScript schema file. It provides an interactive, node-based diagram that helps developers understand complex codebases at a glance.
