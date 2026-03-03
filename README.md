@@ -115,32 +115,38 @@ interface SchemaStore {
   selectNode: (nodeId: string | null) => void;
   updateLayout: () => void;
 }
-```
-
-## Application Flow
-
-```mermaid
-flowchart LR
-  A[User] --> B[UI (Next.js + MUI)]
-  B --> C[Select/Upload TS Schema File]
-  C --> D[TypeScript Parser]
-  D --> E[Data Transformation]
-  E --> F[Visualization Setup]
-  F --> G[React Flow / Reagraph Diagram]
-  G --> H[User Interaction]
-  H --> I[Zustand State Management]
-```
-
-```mermaid
-flowchart TD
-  A[TypeScript Schema File] --> B[TypeScript Parser]
-  B --> C[Extracted Schema Data]
-  C --> D[Data Transformation (Nodes & Edges)]
-  D --> E[Zustand State Store]
-  E --> F[Diagram Rendering (React Flow / Reagraph)]
-  F --> G[Interactive Visualization]
-```
-
+USER
+  |
+  v
+UI (Next.js + MUI)
+  |
+  v
+Select / Upload TS Schema File
+  |
+  v
+TypeScript Parser
+  |
+  v
+Extracted Schema Data
+  |
+  v
+Data Transformation (Nodes & Edges)
+  |
+  v
+Zustand State Store
+  |
+  v
+Visualization Setup
+  |
+  v
+Diagram Rendering (React Flow / Reagraph)
+  |
+  v
+Interactive Visualization
+  |
+  v
+User Interaction (state updates loop back to store)
+  ^_______________________________________________|
 ## Development Steps
 
 ### 1. Project Setup
