@@ -3,8 +3,6 @@
 ## Overview
 This tool visually maps your codebase's core architecture—including data handling and state management—by parsing a generated TypeScript schema file. It provides an interactive, node-based diagram that helps developers understand complex codebases at a glance.
 
-**Note:** We are currently working in the initial Next.js TypeScript project that has already been created.
-
 ## Tech Stack
 - **Framework**: React/Next.js with TypeScript
 - **Parser**: TypeScript Compiler API
